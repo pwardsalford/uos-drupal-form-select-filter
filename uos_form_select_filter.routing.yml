@@ -1,0 +1,7 @@
+uos_form_select_filter.example:
+  path: '/admin/config/user-interface/select-filter-example'
+  defaults:
+    _form: '\Drupal\uos_form_select_filter\Form\ExampleForm'
+    _title: 'Select Filter Example'
+  requirements:
+    _permission: 'access administration pages'

@@ -1,0 +1,6 @@
+uos_form_select_filter.example:
+  title: 'Select Filter Example'
+  description: 'Demonstration of the UoS Form Select Filter functionality.'
+  route_name: uos_form_select_filter.example
+  parent: system.admin_config_ui
+  weight: 10
