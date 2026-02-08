@@ -25,6 +25,12 @@ A Drupal module that provides an enhanced select filter for forms with search fu
 
 ## Usage
 
+### Quick Start
+
+After enabling the module, visit `/admin/config/user-interface/select-filter-example` to see a working demonstration of the select filter.
+
+### Adding to Your Forms
+
 To add the select filter functionality to a form element, add the `#uos_select_filter` property:
 
 ```php
@@ -39,6 +45,8 @@ $form['my_select'] = [
   '#uos_select_filter' => TRUE,
 ];
 ```
+
+The module will automatically add a search input above the select element that filters options as you type.
 
 ## Testing
 
