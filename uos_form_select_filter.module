@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * UoS Form Select Filter module.
+ *
+ * Provides an enhanced select filter for Drupal forms with search functionality.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_element_info_alter().
+ */
+function uos_form_select_filter_element_info_alter(array &$types) {
+  if (isset($types['select'])) {
+    $types['select']['#process'][] = 'uos_form_select_filter_process_select';
+  }
+}
+
+/**
+ * Process callback for select elements.
+ */
+function uos_form_select_filter_process_select(&$element, FormStateInterface $form_state, &$complete_form) {
+  // Add a custom class to enable select filtering.
+  if (!empty($element['#uos_select_filter'])) {
+    $element['#attributes']['class'][] = 'uos-select-filter';
+    $element['#attached']['library'][] = 'uos_form_select_filter/select_filter';
+  }
+  return $element;
+}

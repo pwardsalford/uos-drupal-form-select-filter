@@ -1,0 +1,23 @@
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Composer dependencies
+/vendor/
+
+# PHPUnit configuration (use phpunit.xml.dist as template)
+/phpunit.xml
+
+# Test output
+/tests/output/
+/browser_output/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.log
