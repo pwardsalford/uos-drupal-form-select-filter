@@ -16,7 +16,7 @@ function uos_form_select_filter_help($route_name, RouteMatchInterface $route_mat
   switch ($route_name) {
     case 'help.page.uos_form_select_filter':
       $output = '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('The Enhanced Select module provides an enhanced select form element that replicates the core select functionality.') . '</p>';
+      $output .= '<p>' . t('The Enhanced Select module provides an enhanced select form element that duplicates the core select functionality. This module serves as a foundation for future enhancements and customizations to the select field.') . '</p>';
       return $output;
   }
 }

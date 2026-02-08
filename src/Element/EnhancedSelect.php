@@ -24,8 +24,9 @@ class EnhancedSelect extends Select {
   /**
    * Processes an enhanced select form element.
    *
-   * This method replicates the core select functionality while allowing
-   * for future enhancements.
+   * This is a placeholder process callback that allows for future enhancements
+   * to the select element. The parent Select class handles all core processing
+   * through its inherited process callbacks.
    *
    * @param array $element
    *   The form element to process.
@@ -38,8 +39,8 @@ class EnhancedSelect extends Select {
    *   The processed form element.
    */
   public static function processEnhancedSelect(array &$element, FormStateInterface $form_state, array &$complete_form) {
-    // Currently just passes through to parent, but provides a hook for
-    // future enhancements.
+    // Placeholder for future enhancements. Core select processing is inherited
+    // from the parent Select class.
     return $element;
   }
 
