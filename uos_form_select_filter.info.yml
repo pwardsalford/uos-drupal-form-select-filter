@@ -1,0 +1,5 @@
+name: UoS Form Select Filter
+type: module
+description: 'Provides an enhanced select filter for Drupal forms with search functionality.'
+core_version_requirement: ^9 || ^10 || ^11
+package: University of Salford

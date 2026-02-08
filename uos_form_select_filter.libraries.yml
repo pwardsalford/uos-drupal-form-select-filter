@@ -1,0 +1,10 @@
+select_filter:
+  version: 1.0
+  js:
+    js/select-filter.js: {}
+  css:
+    theme:
+      css/select-filter.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
