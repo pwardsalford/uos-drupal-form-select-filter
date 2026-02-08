@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Enhanced Select module.
+ *
+ * Provides an enhanced select form element.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function uos_form_select_filter_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.uos_form_select_filter':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Enhanced Select module provides an enhanced select form element that replicates the core select functionality.') . '</p>';
+      return $output;
+  }
+}
