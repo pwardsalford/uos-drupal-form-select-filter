@@ -26,9 +26,9 @@
           $select.find('option').each(function () {
             var optionText = $(this).text().toLowerCase();
             if (optionText.indexOf(searchTerm) > -1) {
-              $(this).show();
+              $(this).prop('disabled', false).show();
             } else {
-              $(this).hide();
+              $(this).prop('disabled', true).hide();
             }
           });
         });

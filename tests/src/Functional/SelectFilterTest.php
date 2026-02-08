@@ -53,7 +53,7 @@ class SelectFilterTest extends BrowserTestBase {
     
     $form['test_select'] = [
       '#type' => 'select',
-      '#title' => $this->t('Test Select'),
+      '#title' => 'Test Select',
       '#options' => [
         'option1' => 'Option 1',
         'option2' => 'Option 2',
