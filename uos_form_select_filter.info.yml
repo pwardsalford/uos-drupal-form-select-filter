@@ -1,0 +1,5 @@
+name: 'Enhanced Select'
+description: 'Provides an enhanced select form element that duplicates core select functionality'
+type: module
+core_version_requirement: ^10
+package: 'Custom'
