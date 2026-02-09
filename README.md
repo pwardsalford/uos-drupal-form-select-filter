@@ -14,6 +14,19 @@ This module provides the `enhanced_select` form element type that duplicates the
 
 ## Usage
 
+### As a field widget (Manage form display)
+
+For **List** fields (List (text), List (integer), List (float)):
+
+1. Edit a content type (or other entity type) that has a list field.
+2. Go to **Manage form display**.
+3. For the list field, open the widget dropdown and choose **Enhanced select list**.
+4. Save.
+
+The field will use the enhanced select element with the same behaviour as the core "Select list" widget.
+
+### In custom form code
+
 Use the `enhanced_select` form element type in your forms:
 
 ```php
@@ -32,6 +45,7 @@ $form['my_select'] = [
 ## Features
 
 - Fully compatible with Drupal 10
+- **Enhanced select list** widget for List fields in Manage form display (list_string, list_integer, list_float)
 - Replicates all functionality of the core `select` form element
 - Extends `\Drupal\Core\Render\Element\Select` for maximum compatibility
 - Ready for future enhancements
